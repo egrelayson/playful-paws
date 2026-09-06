@@ -1,0 +1,133 @@
+{
+  "products": [
+    {
+      "id": "p101",
+      "name": "Squeaky Bacon Chew Toy",
+      "petType": "Dog",
+      "category": "Toys",
+      "price": 12.99,
+      "rating": 4.8,
+      "stock": 15,
+      "imageUrl": "squeaky-bacon.jpg",
+      "description": "Durable rubber squeaky toy shaped like breakfast bacon.",
+      "variants": ["Small", "Medium", "Large"]
+    },
+    {
+      "id": "p102",
+      "name": "Feather Wand Teaser",
+      "petType": "Cat",
+      "category": "Toys",
+      "price": 8.49,
+      "rating": 4.6,
+      "stock": 25,
+      "imageUrl": "feather-wand.jpg",
+      "description": "Interactive wand toy with colorful feathers to keep cats active.",
+      "variants": ["Standard", "Deluxe"]
+    },
+    {
+      "id": "p103",
+      "name": "Adjustable Nylon Collar",
+      "petType": "Dog",
+      "category": "Accessories",
+      "price": 14.99,
+      "rating": 4.7,
+      "stock": 30,
+      "imageUrl": "nylon-collar.jpg",
+      "description": "Durable nylon collar with adjustable buckle and metal D-ring.",
+      "variants": ["Red", "Blue", "Black"]
+    },
+    {
+      "id": "p104",
+      "name": "Cat Scratching Post",
+      "petType": "Cat",
+      "category": "Accessories",
+      "price": 29.99,
+      "rating": 4.5,
+      "stock": 10,
+      "imageUrl": "scratching-post.jpg",
+      "description": "Sturdy sisal scratching post to protect furniture and keep claws healthy.",
+      "variants": ["Small", "Large"]
+    },
+    {
+      "id": "p105",
+      "name": "Dental Chew Sticks",
+      "petType": "Dog",
+      "category": "Treats",
+      "price": 9.99,
+      "rating": 4.9,
+      "stock": 0,
+      "imageUrl": "dental-chews.jpg",
+      "description": "Tasty chew sticks that help reduce plaque and freshen breath.",
+      "variants": ["Pack of 10", "Pack of 20"]
+    },
+    {
+      "id": "p106",
+      "name": "Salmon Cat Treats",
+      "petType": "Cat",
+      "category": "Treats",
+      "price": 7.99,
+      "rating": 4.7,
+      "stock": 50,
+      "imageUrl": "salmon-treats.jpg",
+      "description": "Soft, bite-sized salmon treats rich in omega-3 for healthy coats.",
+      "variants": ["50g", "100g"]
+    },
+    {
+      "id": "p107",
+      "name": "Grain-Free Dry Dog Food",
+      "petType": "Dog",
+      "category": "Food",
+      "price": 39.99,
+      "rating": 4.8,
+      "stock": 20,
+      "imageUrl": "dry-dog-food.jpg",
+      "description": "Premium grain-free kibble with chicken and sweet potato.",
+      "variants": ["5lb Bag", "15lb Bag"]
+    },
+    {
+      "id": "p108",
+      "name": "Wet Cat Food Variety Pack",
+      "petType": "Cat",
+      "category": "Food",
+      "price": 24.99,
+      "rating": 4.6,
+      "stock": 35,
+      "imageUrl": "wet-cat-food.jpg",
+      "description": "Assorted flavors of wet cat food in convenient cans.",
+      "variants": ["12-pack", "24-pack"]
+    },
+    {
+      "id": "p109",
+      "name": "Pet Grooming Brush",
+      "petType": "Dog",
+      "category": "Health & Care",
+      "price": 15.99,
+      "rating": 4.5,
+      "stock": 18,
+      "imageUrl": "grooming-brush.jpg",
+      "description": "Gentle bristle brush for detangling fur and reducing shedding.",
+      "variants": ["Small", "Large"]
+    },
+    {
+      "id": "p110",
+      "name": "Cat Litter Deodorizer",
+      "petType": "Cat",
+      "category": "Health & Care",
+      "price": 11.99,
+      "rating": 4.4,
+      "stock": 22,
+      "imageUrl": "litter-deodorizer.jpg",
+      "description": "Odor-control powder to keep litter boxes fresh longer.",
+      "variants": ["500g", "1kg"]
+    }
+  ],
+  "categories": [
+    { "id": "c1", "name": "Toys", "slug": "toys" },
+    { "id": "c2", "name": "Accessories", "slug": "accessories" },
+    { "id": "c3", "name": "Treats", "slug": "treats" },
+    { "id": "c4", "name": "Food", "slug": "food" },
+    { "id": "c5", "name": "Health & Care", "slug": "health-care" }
+  ],
+  "cart": [],
+  "orders": []
+}
