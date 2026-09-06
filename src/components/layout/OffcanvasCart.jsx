@@ -8,6 +8,7 @@ import {
   Col, 
   Badge 
 } from 'react-bootstrap';
+import { PayPalButtons } from '@paypal/react-paypal-js';
 // Import custom `useCart` hook from '../context/CartContext'
 import { useCart } from '../../context/CartContext';
 
@@ -99,9 +100,32 @@ function OffcanvasCart({ show, handleClose }) {
             </div>
 
             <div className="d-grid gap-2">
-              <Button variant="success" size="lg">
-                Proceed to Checkout
-              </Button>
+              {/* 2. PAYPAL BUTTON INTEGRATION */}
+              <PayPalButtons 
+                style={{ layout: 'vertical', label: 'checkout' }}
+                createOrder={(data, actions) => {
+                  return actions.order.create({
+                    purchase_units: [
+                      {
+                        amount: {
+                          value: cartSubtotal.toFixed(2),
+                        },
+                      },
+                    ],
+                  });
+                }}
+                onApprove={async (data, actions) => {
+                  const details = await actions.order.capture();
+                  alert(`Transaction completed by ${details.payer.name.given_name}`);
+                  
+                  // Reset state & close drawer on success
+                  clearCart();
+                  handleClose();
+                }}
+                onError={(err) => {
+                  console.error('PayPal Checkout Error:', err);
+                }}
+              />
               <Button 
                 variant="outline-danger" 
                 size="sm"

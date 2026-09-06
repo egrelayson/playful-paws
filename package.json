@@ -11,6 +11,7 @@
     "mock": "json-server db.json"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^10.4.0",
     "axios": "^1.19.0",
     "bootstrap": "^5.3.8",
     "json-server": "^1.0.0-beta.15",
